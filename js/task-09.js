@@ -12,6 +12,6 @@ changeColorBtn.addEventListener("click", () => {
 let hexColor = getRandomHexColor();
   document.body.style.backgroundColor = hexColor;
   
-  textOfColor.textContent = `Background color:${hexColor}`;
+  textOfColor.textContent = `${hexColor}`;
   console.log(hexColor);
 });

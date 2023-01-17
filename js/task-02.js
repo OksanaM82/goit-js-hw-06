@@ -7,5 +7,11 @@ const ingredients = [
   'Condiments',
 ];
 const ulElement = document.getElementById("ingredients"); 
-const listContent = ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("");
-ulElement.insertAdjacentHTML("beforeend", listContent);
+
+const ingredientsList = ingredients.forEach((ingredient) => {
+  let items = document.createElement("li");
+  items.innerHTML = ingredient;
+  ulElement.append(items);
+  
+});
+
